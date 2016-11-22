@@ -1,0 +1,31 @@
+
+package Objects;
+import java.awt.Color;
+import java.awt.color.*;
+public class Curtains {
+	private Color color;
+	private float length;
+	private float width;
+	protected final Color DEFCOLOR = Color.BLACK;
+	protected final float DEFLENGTH = 72;
+	protected final float DEFWIDTH = 53;
+	
+	//no arg constructor
+	public Curtains() {
+		color = DEFCOLOR;
+		length = DEFLENGTH;
+		width = DEFWIDTH;
+	}
+	
+	public Curtains(Color color) {
+		this.color = color;
+		length = DEFLENGTH;
+		width = DEFWIDTH;
+	}
+	
+	public Curtains(Color color, float length, float width) {
+		this.color = color;
+		this.length = length;
+		this.width = width;
+	}
+}
